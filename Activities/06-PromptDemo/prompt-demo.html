@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Prompt Demo</title>
   </head>
   <body>
-    
     <script type="text/javascript">
+      alert("hi!");
 
-    alert("We definitely rock!");
+      // Notice that the confirm and prompt take in variables but the alert doesn't
+      // var doYouRock = confirm("The question is, do *you* rock?");
+      var name = prompt("whats ur name?");
+      console.log(name);
 
-    // Notice that the confirm and prompt take in variables but the alert doesn't
-    var doYouRock = confirm("The question is, do *you* rock?");
-    var howMuchRock = prompt("How much do you rock?");
+      alert("hi there," + name);
 
-    // Alert the results
-    alert(doYouRock);
-    alert(howMuchRock);
+      var user = confirm("are you a user?");
+      console.log = true;
 
+      if (user) {
+        alert("you have confirmed you are user");
+      } else {
+        alert("you are not a user");
+      }
+      // Alert the results
+
+      // alert(howMuchRock);
     </script>
-
   </body>
 </html>
